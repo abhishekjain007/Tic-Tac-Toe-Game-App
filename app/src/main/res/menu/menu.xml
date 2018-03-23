@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+    android:title="Settings"
+        app:showAsAction="always"
+    android:id="@+id/settings">
+
+    <menu>
+        <item
+            android:title="bckColor"
+            android:id="@+id/bckcngeColor"
+            >
+            <menu>
+                <group
+                    android:checkableBehavior="single">
+                    <item
+                        android:title="grey"
+                        android:id="@+id/colorGrey"
+                        />
+                    <item
+                        android:title="aqua"
+                        android:id="@+id/aqua"
+                        />
+                    <item
+                        android:title="indigo"
+                        android:id="@+id/colorIndigo"
+                        />
+                    <item
+                        android:title="pink"
+                        android:id="@+id/pink"
+                        />
+
+
+                </group>
+
+
+            </menu>
+        </item>
+
+
+        <item
+            android:title="Grid Size"
+            android:id="@+id/gridSize"
+            app:showAsAction="always">
+
+
+            <menu>
+                <group
+                    android:checkableBehavior="single">
+
+                    <item
+                        android:title="3 X 3"
+                        android:id="@+id/grid3"
+                        android:checked="true"
+                        />
+
+
+                    <item
+                        android:title="4 X 4"
+                        android:id="@+id/grid4"/>
+
+                    <item
+                        android:title="5 X 5"
+                        android:id="@+id/grid5"/>
+
+
+                </group>
+            </menu>
+
+
+        </item>
+
+
+
+
+    </menu>
+    </item>
+
+</menu>
